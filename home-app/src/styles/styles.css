@@ -95,3 +95,45 @@
   margin-top: 1rem;
   align-items: center; 
 }
+
+/* Services Section */
+.services-section {
+  background-color: black; 
+  padding: 3rem 0; 
+}
+
+.services-section h2 {
+  color: white; 
+  margin-bottom: 2rem;
+}
+
+/* Service Card */
+.service-card {
+  background-color: rgba(51, 51, 51, 0.9); 
+  color: white; 
+  border-radius: 8px; 
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  text-align: center;
+}
+
+/* Logo inside the service card */
+.service-logo {
+  width: 350px; 
+  height: auto; 
+  margin-top: 1rem; 
+  margin-bottom: 0.5rem; 
+}
+
+/* Hover effect for the service card */
+.service-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-card {
+    margin-bottom: 1.5rem; 
+  }
+}
