@@ -150,7 +150,10 @@
 
 /* Blog Section Styles */
 #blogs {
-  background-color: #091627; 
+  background-image: url('../assets/Landing 1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white; 
   padding: 3rem 0; 
 }
