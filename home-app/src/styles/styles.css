@@ -1,0 +1,96 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;        
+  width: 100%;
+  top: 0;
+  z-index: 1000;     
+  transition: background-color 0.3s ease; 
+  background-color: rgba(0, 0, 0, 0.7) !important;   
+  padding: 1rem;
+  box-shadow: none; 
+}
+
+/* When scrolling, add a background color and shadow */
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.7); 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* Center the brand name */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff !important;
+}
+
+/* Hover effect on the brand name */
+.navbar-brand:hover {
+  color: #0056b3 !important;
+}
+
+/* Align the navbar links to the left */
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-nav {
+  flex-grow: 0;
+  justify-content: flex-start;
+}
+
+/* Navbar links */
+.nav-link {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #f7f4f4 !important; 
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect on links */
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 992px) {
+  .navbar-brand {
+    position: static;
+    transform: none;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-start;
+  }
+}
+
+/* Landing Section */
+.landing-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/Landing.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  text-align: right; 
+  position: relative;
+  padding-right: 2rem; 
+}
+
+/* Landing content*/
+.landing-content {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
