@@ -5,7 +5,7 @@ import '../styles/styles.css';
 const NavigationBar = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="/">INk</Navbar.Brand>
+       <img src={'logo.png'} alt="Logo" className="navbar-logo" />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">

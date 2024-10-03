@@ -5,8 +5,9 @@ const LandingSection = () => {
     
     <div className="landing-section">
       <div className="landing-content">
-        <h1>Welcome to Our Company</h1>
+        <h1>Welcome to INk</h1>
         <p>Your trusted partner in Fashion Service.</p>
+        <img src={'logo.png'} alt="Logo" className="landing-logo" />
       </div>
     </div>
 
