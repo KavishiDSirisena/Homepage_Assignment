@@ -30,6 +30,7 @@ function App() {
         <NavigationBar /> 
         <Routes>
           <Route path="/" element={<Home />} />
+
         </Routes>
       </BrowserRouter>
     </div>

@@ -47,8 +47,8 @@
 
 /* Logo in the navbar */
 .navbar-logo {
-  height: 80px; /* Adjust the height as needed */
-  margin-left: 10px; /* Space between the brand name and logo */
+  height: 80px; 
+  margin-left: 10px; 
 }
 
 
@@ -95,7 +95,6 @@
   margin-top: 1rem;
   align-items: center; 
 }
-
 /* Services Section */
 .services-section {
   background-color: black; 
@@ -104,7 +103,7 @@
 
 .services-section h2 {
   color: white; 
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
 }
 
 /* Service Card */
@@ -112,14 +111,15 @@
   background-color: rgba(51, 51, 51, 0.9); 
   color: white; 
   border-radius: 8px; 
-  padding: 1.5rem;
+  padding: 1.5rem; 
   transition: transform 0.3s, box-shadow 0.3s; 
-  text-align: center;
+  text-align: center; 
+  overflow: hidden; 
 }
 
 /* Logo inside the service card */
 .service-logo {
-  width: 350px; 
+  max-width: 100%; 
   height: auto; 
   margin-top: 1rem; 
   margin-bottom: 0.5rem; 
@@ -136,4 +136,92 @@
   .service-card {
     margin-bottom: 1.5rem; 
   }
+}
+
+@media (max-width: 576px) {
+  .service-logo {
+    width: 80%; 
+  }
+
+  .services-section h2 {
+    font-size: 1.5rem; 
+  }
+}
+
+/* Blog Section Styles */
+#blogs {
+  background-color: #091627; 
+  color: white; 
+  padding: 3rem 0; 
+}
+
+.card {
+  border: none; 
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+/* Hover effect for the card */
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.card-body {
+  background-color: #032527; 
+  border-radius: 0 0 10px 10px; 
+}
+
+.card-title {
+  font-size: 1.25rem; 
+  color: #f7f4f4;
+}
+
+.card-text {
+  font-size: 0.9rem; 
+}
+
+.text-danger {
+  color: #ff4d4d; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px; 
+  }
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: black; 
+  color: white; 
+  padding: 2rem 0; 
+  position: relative; 
+  bottom: 0; 
+  width: 100%;
+}
+
+/* Centered text in footer */
+.footer .container {
+  max-width: 960px; 
+  margin: 0 auto; 
+}
+
+/* Footer links */
+.footer-link {
+  color: #007bff; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+/* Hover effect for links */
+.footer-link:hover {
+  color: #0056b3; 
 }
