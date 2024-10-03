@@ -4,6 +4,7 @@ import '../styles/styles.css';
 
 const NavigationBar = () => {
   return (
+    //scrollable NavBar
     <Navbar bg="light" expand="lg">
        <img src={'logo.png'} alt="Logo" className="navbar-logo" />
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
