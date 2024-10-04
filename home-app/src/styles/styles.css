@@ -203,28 +203,25 @@
 
 /* Footer Styles */
 .footer {
-  background-color: black; 
+  background-color: #111e21; 
   color: white; 
   padding: 2rem 0; 
-  position: relative; 
-  bottom: 0; 
-  width: 100%;
 }
 
-/* Centered text in footer */
-.footer .container {
-  max-width: 960px; 
-  margin: 0 auto; 
-}
-
-/* Footer links */
 .footer-link {
-  color: #007bff; 
+  color: #ffcc00; 
   text-decoration: none; 
-  transition: color 0.3s ease; 
 }
 
-/* Hover effect for links */
 .footer-link:hover {
-  color: #0056b3; 
+  text-decoration: underline; 
+}
+
+.contact-info {
+  margin-top: 1rem; 
+  margin-bottom: 3rem;
+}
+
+.contact-info h5 {
+  margin-bottom: 0.5rem; 
 }
